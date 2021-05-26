@@ -23,10 +23,17 @@ class _temperaturaState extends State<temperatura> {
               style: TextStyle(fontSize: 20, fontFamily: 'rbold'),
             ),
           ),
+          Container(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              'Aqui va la tempretatura \n 50º',
+              style: TextStyle(fontSize: 20, fontFamily: 'rbold'),
+            ),
+          ),
           RaisedButton(
             elevation: 5.0,
             onPressed: () {},
-            padding: EdgeInsets.all(15.0),
+            padding: EdgeInsets.all(15),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
