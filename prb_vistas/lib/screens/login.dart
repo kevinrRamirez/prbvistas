@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:prb_vistas/main.dart';
+import 'package:prb_vistas/screens/temperatura.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -71,7 +72,12 @@ class _LoginState extends State<Login> {
       // ignore: deprecated_member_use
       child: RaisedButton(
         elevation: 5.0,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => temperatura()),
+          );
+        },
         padding: EdgeInsets.all(15.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
